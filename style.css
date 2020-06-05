@@ -1,21 +1,20 @@
 body {
     margin: 0;
-     
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     color: #6c7279;
-     -webkit-font-smoothing: antialiased; /* это позволяет сглаживать шрифты чтоб они казались более обтикаемые как бордер радиус  */
-
+    -webkit-font-smoothing: antialiased;
+    /* это позволяет сглаживать шрифты чтоб они казались более обтикаемые как бордер радиус  */
+    padding: 0;
     background-color: #fff;
 }
+
 /* font-family: 'Cardo', serif;
 font-family: 'Raleway', sans-serif; */
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
-} 
+}
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -30,12 +29,14 @@ p {
 
 .container {
     width: 100%;
-    max-width: 1200px; /*Из-за того что мы добавили паддинг 0 15рх
+    max-width: 1200px;
+    /*Из-за того что мы добавили паддинг 0 15рх
      (15 слева + 15 справа = 30) к нашей ширене мы добовляем + 30рх 
      т.e 1170 + 30 = 1200 но ширина контента так и останется 1170 
      ведь паддинг займет +30рх иначе ширина контента будет 1140рх*/
     margin: 0 auto;
-    padding: 0 15px; /*для того чтоб не лип к началу 
+    padding: 0 15px;
+    /*для того чтоб не лип к началу 
     экрана и было красиво*/
 }
 
@@ -45,19 +46,17 @@ p {
 .header {
     width: 100%;
     height: 100px;
-
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
 }
 
-.header__inner  {
+.header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 35px 0;
-
     border-bottom: 1px solid #cbccd3;
 }
 
@@ -75,9 +74,7 @@ p {
     color: #fff;
     text-decoration: none;
     opacity: .75;
-
     margin-left: 50px;
-    
     transition: opacity .1s linear;
 }
 
@@ -98,7 +95,6 @@ p {
     justify-content: center;
     height: 750px;
     padding-top: 100px;
-
     background: #30334e url("img/intro-bgd.jpg") center no-repeat;
     background-size: cover;
 }
@@ -106,20 +102,20 @@ p {
 .intro__inner {
     width: 100%;
     max-width: 970px;
-
     margin: 0 auto;
     text-align: center;
 }
 
 .intro__title {
-    font-family: 'Open Sans' , sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 65px;
     color: #fff;
-    font-weight: 700; 
+    font-weight: 700;
     text-transform: uppercase;
-    line-height: 1.1;  /* 1 = 65 (выше прописан размер шрифта ка 65пикс), 1.1 = 65 + 6.5 = 71.5px */
-   
-    margin: 0 0 30px 0;  /* сверху спр снизу слев */
+    line-height: 1.1;
+    /* 1 = 65 (выше прописан размер шрифта ка 65пикс), 1.1 = 65 + 6.5 = 71.5px */
+    margin: 0 0 30px 0;
+    /* сверху спр снизу слев */
 }
 
 .intro__subtitle {
@@ -131,26 +127,23 @@ p {
 }
 
 /*                          Button
-+++++++++++++++++++++++++++++++++++++++++==============*/ 
-
++++++++++++++++++++++++++++++++++++++++++==============*/
 
 .btn {
     display: inline-block;
-    vertical-align: top ;
-
+    vertical-align: top;
     font-weight: 600;
     color: #fff;
     font-size: 13px;
     border-radius: 2px;
     border: 0;
-    font-family: inherit; /* говорит о том что нужно унаследовать шрифт родителя или записать  как у родителя в нашем сл тела боди   font-family: 'Raleway', sans-serif;*/
-    
-
-    cursor: pointer; /* делает вместо мышки при наведении руку человека (меняет курсор на выбранный)*/
+    font-family: inherit;
+    /* говорит о том что нужно унаследовать шрифт родителя или записать  как у родителя в нашем сл тела боди   font-family: 'Raleway', sans-serif;*/
+    cursor: pointer;
+    /* делает вместо мышки при наведении руку человека (меняет курсор на выбранный)*/
     text-transform: uppercase;
     text-decoration: none;
     transition: background .1s linear;
-
     padding: 14px 40px;
 }
 
@@ -159,12 +152,11 @@ p {
 }
 
 .btn--red:hover {
-  background-color: #b92222;
+    background-color: #b92222;
 }
 
-
 /*                          Features
-+++++++++++++++++++++++++++++++++++++++++==============*/ 
++++++++++++++++++++++++++++++++++++++++++==============*/
 
 .features {
     display: flex;
@@ -172,12 +164,10 @@ p {
     margin: 95px 0;
 }
 
-.features__item{
+.features__item {
     width: 33.33333%;
-
     padding: 0 40px;
     margin: 25px 0;
-
     text-align: center;
 }
 
@@ -185,40 +175,35 @@ p {
     margin-bottom: 25px;
 }
 
-.features__tetle{
+.features__tetle {
     font-size: 14px;
     font-weight: 700;
- color: #6c7279;
-
+    color: #6c7279;
     margin-bottom: 20px;
-
     text-transform: uppercase;
 }
 
 .features__text {
-    font-size: 14px; 
+    font-size: 14px;
     color: #6c7279;
     line-height: 1.5;
 }
 
-
 /*                        Works
-+++++++++++++++++++++++++++++++++++++++++==============*/ 
++++++++++++++++++++++++++++++++++++++++++==============*/
 
-.works{
+.works {
     display: flex;
     flex-wrap: wrap;
 }
 
 .works__item {
-width: 25%;
-height: 350px;
-
-border-bottom: 1px solid #fff;
-border-right: 1px solid #fff;
-
-position: relative;
-overflow: hidden;
+    width: 25%;
+    height: 350px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    position: relative;
+    overflow: hidden;
 }
 
 .works__photo {
@@ -226,11 +211,10 @@ overflow: hidden;
     top: 50%;
     left: 50%;
     z-index: 1;
-
     transform: translate3d(-50%, -50%, 0);
 }
 
-.works__item:hover .works__content { 
+.works__item:hover .works__content {
     opacity: 1;
 }
 
@@ -240,27 +224,22 @@ overflow: hidden;
     justify-content: center;
     width: 100%;
     height: 100%;
-
     text-align: center;
-
     background-color: rgb(232, 69, 69, .9);
     opacity: 0;
-
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-
     transition: opacity .2s linear;
 }
 
 .works__title {
-   font-size: 14px;
-   font-weight: 700;
-   color: #fff; 
-   text-transform: uppercase;
-
-   margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 .works__text {
@@ -268,21 +247,22 @@ overflow: hidden;
     color: #fff;
 }
 
-
 /*                       Teams
-+++++++++++++++++++++++++++++++++++++++++==============*/ 
++++++++++++++++++++++++++++++++++++++++++==============*/
 
 .team {
-    margin: 100px 0 70px; /*последнии 70рх это пиксели снизу 
+    margin: 100px 0 70px;
+    /*последнии 70рх это пиксели снизу 
     тк мы указали тимам по 30px  снизу 
     (margin-bottom: 30px;) то от 100рх снизу вычитаем 
     30 рх = 70рх*/
 }
 
 .team__inner {
-display: flex;
-flex-wrap: wrap;
-margin: 0 -15px;  /* Это сделано для того чтоб убрать
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    /* Это сделано для того чтоб убрать
  лишние 15 пкселей которые мы добавили 
   в team__item с самого начала и с самого
    конца тк там они не нужны но нужны в середине тимов*/
@@ -291,21 +271,20 @@ margin: 0 -15px;  /* Это сделано для того чтоб убрать
 .team__item {
     width: 25%;
     padding: 0 15px;
-    margin-bottom: 30px; /*чтоб если было больше тимов то нижний 
+    margin-bottom: 30px;
+    /*чтоб если было больше тимов то нижний 
     ряд не прилипал к верхнему + для адаптивной верстки */
 }
 
-.team__photo { 
-    display: block;  
+.team__photo {
+    display: block;
     max-width: 100%;
     height: auto;
-
     margin-bottom: 20px;
 }
 
 .team__name {
     margin-bottom: 8px;
-
     font-size: 22px;
     color: #2d3033;
 }
@@ -314,7 +293,6 @@ margin: 0 -15px;  /* Это сделано для того чтоб убрать
     font-size: 13px;
     color: #e84545;
     text-transform: uppercase;
-
     margin-bottom: 15px;
 }
 
@@ -322,10 +300,8 @@ margin: 0 -15px;  /* Это сделано для того чтоб убрать
     font-size: 14px;
     line-height: 1.5;
     color: #6c7279;
-
     margin-bottom: 20px;
 }
-
 
 /*                   Social
 +++++++++++++++++++++++++++++++++++++++++==============*/
@@ -334,17 +310,15 @@ margin: 0 -15px;  /* Это сделано для того чтоб убрать
     display: flex;
 }
 
-.social__item{
+.social__item {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
     background-color: #fff;
-
     margin-right: 4px;
     border: 1px solid #c6cacc;
-
     transition: background .1s linear;
 }
 
@@ -362,35 +336,3 @@ margin: 0 -15px;  /* Это сделано для того чтоб убрать
     height: 18px;
     fill: #c6cacc;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
