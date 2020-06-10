@@ -5,7 +5,6 @@ body {
     color: #6c7279;
     -webkit-font-smoothing: antialiased;
     /* это позволяет сглаживать шрифты чтоб они казались более обтикаемые как бордер радиус  */
-    padding: 0;
     background-color: #fff;
 }
 
@@ -335,4 +334,55 @@ p {
     display: block;
     height: 18px;
     fill: #c6cacc;
+}
+
+/*                   Reviews
++++++++++++++++++++++++++++++++++++++++++==============*/
+
+.reviews {
+    overflow: hidden;
+    background-color: #53354a;
+}
+
+.review__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review__photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.review__image {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.review__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 80px;
+}
+
+.review__text {
+    font-family: 'cardo', sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #ffff;
+    margin-bottom: 25px;
+}
+
+.review__author {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
 }
