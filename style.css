@@ -154,6 +154,10 @@ p {
     background-color: #b92222;
 }
 
+.btn--long {
+    min-width: 280px;
+}
+
 /*                          Features
 +++++++++++++++++++++++++++++++++++++++++==============*/
 
@@ -385,4 +389,29 @@ p {
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
+}
+
+/*                       Download
++++++++++++++++++++++++++++++++++++++++++==============*/
+
+.download {
+    text-align: center;
+    margin: 90px 0;
+}
+
+.download__title {
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+ .download__text {
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
 }
