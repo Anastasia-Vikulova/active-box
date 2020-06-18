@@ -411,6 +411,7 @@ p {
 
 .download {
     text-align: center;
+
     margin: 90px 0;
 }
 
@@ -418,6 +419,7 @@ p {
     font-size: 28px;
     color: #2d3033;
     font-weight: 300;
+
     margin-bottom: 5px;
 }
 
@@ -426,6 +428,7 @@ p {
     color: #2d3033;
     font-weight: 700;
     text-transform: uppercase;
+
     margin-bottom: 30px;
 }
 
@@ -433,11 +436,11 @@ p {
 +++++++++++++++++++++++++++++++++++++++++==============*/
 
 .footer {
-    padding: 70px 0;
     background-color: #3a3e64;
 }
 
 .footer__inner {
+    padding: 70px 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -445,6 +448,8 @@ p {
 .footer__block {
     width: 33.33333%;
     text-align: center;
+
+    padding: 0 15px;
 }
 
 .footer__title {
@@ -457,7 +462,27 @@ p {
 
 .footer__address {
     font-size: 14px;
+    line-height: 1.5;
     font-weight: 700px;
     font-style: normal;
     color: rgba(255, 255, 255, .5);
+}
+
+/*                  Copyright
++++++++++++++++++++++++++++++++++++++++++==============*/
+.copyright {
+    background-color: #313454;
+
+    padding: 20px 0;
+} 
+
+.copyright__text {
+text-align: center;
+font-size: 14px;
+line-height: 1.5;
+color: #808080;
+}
+
+.copyright__text span {
+    color: #fff;
 }
