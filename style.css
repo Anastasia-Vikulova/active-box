@@ -313,6 +313,10 @@ p {
     display: flex;
 }
 
+.social--footer {
+    justify-content: center;
+}
+
 .social__item {
     display: flex;
     justify-content: center;
@@ -338,6 +342,17 @@ p {
     display: block;
     height: 18px;
     fill: #c6cacc;
+}
+
+.social--footer .social__item {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+}
+
+.social--footer .social__item:hover {
+    background-color: #fff;
 }
 
 /*                   Reviews
@@ -406,12 +421,43 @@ p {
     margin-bottom: 5px;
 }
 
- .download__text {
+.download__text {
     font-size: 13px;
     color: #2d3033;
     font-weight: 700;
-
     text-transform: uppercase;
     margin-bottom: 30px;
+}
 
+/*                  Footer
++++++++++++++++++++++++++++++++++++++++++==============*/
+
+.footer {
+    padding: 70px 0;
+    background-color: #3a3e64;
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__block {
+    width: 33.33333%;
+    text-align: center;
+}
+
+.footer__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer__address {
+    font-size: 14px;
+    font-weight: 700px;
+    font-style: normal;
+    color: rgba(255, 255, 255, .5);
 }
