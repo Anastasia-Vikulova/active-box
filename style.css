@@ -95,8 +95,9 @@ p {
     height: 750px;
     padding-top: 100px;
     background: #30334e url("img/intro-bgd.jpg") center no-repeat;
-    background-size: cover;
+    background-size: cover;/* адаптивная верстка */
 }
+
 
 .intro__inner {
     width: 100%;
@@ -485,4 +486,48 @@ color: #808080;
 
 .copyright__text span {
     color: #fff;
+}
+
+.burger {
+    display: none;
+}
+
+
+/*                  Media
++++++++++++++++++++++++++++++++++++++++++==============*/
+
+@media (max-width: 991px)/* планшетная ориентация*/ { 
+    /* Nav */   
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    /* intro */
+.intro__title {
+    font-size: 40px;
+}
+
+}
+
+
+@media (max-width: 767px)/* телеф ориент*/ { 
+    /* intro */
+    .intro { 
+        height: auto;
+        padding-top: 130px;
+        padding-bottom: 30px;
+    }
+
+    /* intro__title  */
+    .intro__title {
+        font-size: 30px;
+    }
+
+    /* intro__subtitle */
+    .intro__subtitle {
+        font-size: 16px;
+        margin-bottom: 30px ;
+    }
 }
