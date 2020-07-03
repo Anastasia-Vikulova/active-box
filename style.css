@@ -643,4 +643,27 @@ p {
      .download__title {
          font-size: 24px;
      }
+
+     /* Footer */ 
+       .footer__inner {
+         padding: 30px 0;
+     }
+
+     .footer__block {
+         width: 100%;
+         padding-right: 0;
+         padding-left: 0;
+         margin-bottom: 30px;
+     }
+
+    .footer__block:first-child {
+       margin-bottom: 0;
+   }
+}
+
+@media (max-width: 414px) {/* 5 iphone { */
+      /* Reviews */    
+      .review__image {
+        right: -100px;
+      }
 }
